@@ -1,0 +1,16 @@
+C:\devs\HenameNet\bin\Debug\net8.0-windows\HenameNet.exe
+C:\devs\HenameNet\bin\Debug\net8.0-windows\HenameNet.deps.json
+C:\devs\HenameNet\bin\Debug\net8.0-windows\HenameNet.runtimeconfig.json
+C:\devs\HenameNet\bin\Debug\net8.0-windows\HenameNet.dll
+C:\devs\HenameNet\bin\Debug\net8.0-windows\HenameNet.pdb
+C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.Form1.resources
+C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.csproj.GenerateResource.cache
+C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.GeneratedMSBuildEditorConfig.editorconfig
+C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.AssemblyInfoInputs.cache
+C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.AssemblyInfo.cs
+C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.csproj.CoreCompileInputs.cache
+C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.dll
+C:\devs\HenameNet\obj\Debug\net8.0-windows\refint\HenameNet.dll
+C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.pdb
+C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.genruntimeconfig.cache
+C:\devs\HenameNet\obj\Debug\net8.0-windows\ref\HenameNet.dll
