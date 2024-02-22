@@ -37,18 +37,21 @@
             // 
             // txtDiretorio
             // 
-            txtDiretorio.BackColor = SystemColors.Control;
-            txtDiretorio.Location = new Point(109, 12);
+            txtDiretorio.BackColor = Color.White;
+            txtDiretorio.Enabled = false;
+            txtDiretorio.Location = new Point(125, 10);
+            txtDiretorio.Margin = new Padding(3, 2, 3, 2);
             txtDiretorio.Name = "txtDiretorio";
             txtDiretorio.PlaceholderText = "Selecione o diretório...";
-            txtDiretorio.Size = new Size(837, 25);
+            txtDiretorio.Size = new Size(956, 22);
             txtDiretorio.TabIndex = 1;
             // 
             // btnSelecionarDiretorio
             // 
-            btnSelecionarDiretorio.Location = new Point(10, 12);
+            btnSelecionarDiretorio.Location = new Point(11, 10);
+            btnSelecionarDiretorio.Margin = new Padding(3, 2, 3, 2);
             btnSelecionarDiretorio.Name = "btnSelecionarDiretorio";
-            btnSelecionarDiretorio.Size = new Size(93, 25);
+            btnSelecionarDiretorio.Size = new Size(106, 21);
             btnSelecionarDiretorio.TabIndex = 2;
             btnSelecionarDiretorio.Text = "Diretório";
             btnSelecionarDiretorio.UseVisualStyleBackColor = true;
@@ -57,9 +60,11 @@
             // groupBox1
             // 
             groupBox1.Controls.Add(listArquivos);
-            groupBox1.Location = new Point(10, 43);
+            groupBox1.Location = new Point(11, 35);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(936, 242);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(1070, 199);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
             groupBox1.Text = "Arquivos do diretório";
@@ -68,24 +73,27 @@
             // 
             listArquivos.Dock = DockStyle.Fill;
             listArquivos.FormattingEnabled = true;
-            listArquivos.ItemHeight = 17;
-            listArquivos.Location = new Point(3, 21);
+            listArquivos.ItemHeight = 14;
+            listArquivos.Location = new Point(3, 17);
+            listArquivos.Margin = new Padding(3, 2, 3, 2);
             listArquivos.Name = "listArquivos";
-            listArquivos.Size = new Size(930, 218);
+            listArquivos.Size = new Size(1064, 180);
             listArquivos.TabIndex = 0;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 17F);
+            AutoScaleDimensions = new SizeF(8F, 14F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(958, 585);
+            ClientSize = new Size(1095, 482);
             Controls.Add(groupBox1);
             Controls.Add(btnSelecionarDiretorio);
             Controls.Add(txtDiretorio);
-            Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Verdana", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             groupBox1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();

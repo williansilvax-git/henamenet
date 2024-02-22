@@ -2,10 +2,16 @@ namespace HenameNet
 {
     public partial class Form1 : Form
     {
-        public string Diretorio { get; set; }
+        public string? Diretorio { get; set; }
+        public string? DiretorioBackup { get; set; }
         public Form1()
         {
             InitializeComponent();
+            string? exeDiretorio = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            if (exeDiretorio != null)
+            {
+                DiretorioBackup = Path.Combine(exeDiretorio, "backupFiles");
+            }
         }
 
         private List<string> GetFilesDiretorio(string diretorio)
@@ -23,10 +29,25 @@ namespace HenameNet
 
         private void BackupManager()
         {
-            var caminho = @"./backupFiles";
-            if (!Directory.Exists(caminho))
+            if (!Directory.Exists(Diretorio))
             {
-                Directory.CreateDirectory(caminho);
+                MessageBox.Show("Diretório de origem não existe!");
+                return;
+            }
+
+            if (!Directory.Exists(DiretorioBackup))
+            {
+                Directory.CreateDirectory(DiretorioBackup);
+            }
+
+            string[] arquivos = Directory.GetFiles(Diretorio);
+
+            foreach (string arquivo in arquivos)
+            {
+                string nomeArquivo = Path.GetFileName(arquivo);
+                string caminhoDestino = Path.Combine(DiretorioBackup, nomeArquivo);
+
+                File.Copy(arquivo, caminhoDestino);
             }
         }
 
@@ -57,6 +78,14 @@ namespace HenameNet
 
             GetFilesDiretorio(Diretorio).ForEach(fi => listArquivos.Items.Add(fi));
             BackupManager();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Directory.Exists(DiretorioBackup))
+            {
+                Directory.Delete(DiretorioBackup, true);
+            }
         }
     }
 }

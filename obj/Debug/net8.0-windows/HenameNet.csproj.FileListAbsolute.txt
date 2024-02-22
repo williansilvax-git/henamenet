@@ -14,3 +14,4 @@ C:\devs\HenameNet\obj\Debug\net8.0-windows\refint\HenameNet.dll
 C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.pdb
 C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.genruntimeconfig.cache
 C:\devs\HenameNet\obj\Debug\net8.0-windows\ref\HenameNet.dll
+C:\devs\HenameNet\obj\Debug\net8.0-windows\HenameNet.sourcelink.json
